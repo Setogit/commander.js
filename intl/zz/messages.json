@@ -1,0 +1,53 @@
+{
+  "0d2e331b5c258520aead4eb80033d69b": [
+    "g.f:index.js:804"
+  ],
+  "174369644f70256f27b9ce8bc475403a": [
+    "g.f:index.js:201"
+  ],
+  "192b943034489b38cf76f19cd9e6c841": [
+    "g.f:index.js:561"
+  ],
+  "21138cc06293b8fb28dc8e88c22da80f": [
+    "g.f:index.js:788"
+  ],
+  "3c31663da800c60d0c85349364f4c18f": [
+    "g.f:index.js:786"
+  ],
+  "44b652cc5eb0cbb5507e654b5ec6073a": [
+    "g.f:index.js:818"
+  ],
+  "84453ff193ab315f7823042089abea49": [
+    "g.f:index.js:563"
+  ],
+  "966ae32e74c53417daee689b3e601fad": [
+    "g.f:index.js:839"
+  ],
+  "e3d97262a4cdf396814389a6a99087c8": [
+    "g.f:index.js:770"
+  ],
+  "--": [
+    "replace:index.js:63"
+  ],
+  "--help": [
+    "argv.push:index.js:455"
+  ],
+  "-h, --help": [
+    "pad:index.js:940"
+  ],
+  "-no-": [
+    "flags.indexOf:index.js:47"
+  ],
+  ".js": [
+    "exists:index.js:533"
+  ],
+  "close": [
+    "proc.on:index.js:558"
+  ],
+  "error": [
+    "proc.on:index.js:559"
+  ],
+  "node": [
+    "spawn:index.js:549"
+  ]
+}

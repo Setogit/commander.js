@@ -2,6 +2,10 @@
  * Module dependencies.
  */
 
+var SG = require('strong-globalize');
+SG.SetRootDir(__dirname);
+var g = SG();
+
 var EventEmitter = require('events').EventEmitter;
 var spawn = require('child_process').spawn;
 var readlink = require('graceful-readlink').readlinkSync;
@@ -194,7 +198,7 @@ Command.prototype.arguments = function (desc) {
  */
 
 Command.prototype.addImplicitHelpCommand = function() {
-  this.command('help [cmd]', 'display help for [cmd]');
+  this.command('help [cmd]', g.f('display help for [cmd]'));
 };
 
 /**
@@ -554,9 +558,9 @@ Command.prototype.executeSubCommand = function(argv, args, unknown) {
   proc.on('close', process.exit.bind(process));
   proc.on('error', function(err) {
     if (err.code == "ENOENT") {
-      console.error('\n  %s(1) does not exist, try --help\n', bin);
+      console.error(g.f('\n  %s(1) does not exist, try --help\n', bin));
     } else if (err.code == "EACCES") {
-      console.error('\n  %s(1) not executable. try chmod or run with root\n', bin);
+      console.error(g.f('\n  %s(1) not executable. try {{chmod}} or run with {{root}}\n', bin));
     }
     process.exit(1);
   });
@@ -763,7 +767,7 @@ Command.prototype.opts = function() {
 
 Command.prototype.missingArgument = function(name) {
   console.error();
-  console.error("  error: missing required argument `%s'", name);
+  console.error(g.f("  error: missing required argument `%s'", name));
   console.error();
   process.exit(1);
 };
@@ -779,9 +783,9 @@ Command.prototype.missingArgument = function(name) {
 Command.prototype.optionMissingArgument = function(option, flag) {
   console.error();
   if (flag) {
-    console.error("  error: option `%s' argument missing, got `%s'", option.flags, flag);
+    console.error(g.f("  error: option `%s' argument missing, got `%s'", option.flags, flag));
   } else {
-    console.error("  error: option `%s' argument missing", option.flags);
+    console.error(g.f("  error: option `%s' argument missing", option.flags));
   }
   console.error();
   process.exit(1);
@@ -797,7 +801,7 @@ Command.prototype.optionMissingArgument = function(option, flag) {
 Command.prototype.unknownOption = function(flag) {
   if (this._allowUnknownOption) return;
   console.error();
-  console.error("  error: unknown option `%s'", flag);
+  console.error(g.f("  error: unknown option `%s'", flag));
   console.error();
   process.exit(1);
 };
@@ -811,7 +815,7 @@ Command.prototype.unknownOption = function(flag) {
 
 Command.prototype.variadicArgNotLast = function(name) {
   console.error();
-  console.error("  error: variadic arguments must be last `%s'", name);
+  console.error(g.f("  error: variadic arguments must be last `%s'", name));
   console.error();
   process.exit(1);
 };
@@ -832,7 +836,7 @@ Command.prototype.version = function(str, flags) {
   if (0 == arguments.length) return this._version;
   this._version = str;
   flags = flags || '-V, --version';
-  this.option(flags, 'output the version number');
+  this.option(flags, g.f('output the version number'));
   this.on('version', function() {
     process.stdout.write(str + '\n');
     process.exit(0);

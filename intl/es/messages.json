@@ -1,0 +1,11 @@
+{
+  "0d2e331b5c258520aead4eb80033d69b": "  Error: Opción desconocida `{0} '",
+  "174369644f70256f27b9ce8bc475403a": "Muestre ayuda para que [cmd ]",
+  "192b943034489b38cf76f19cd9e6c841": "\n  {0} (1) no existe, prueba -- ayuda\n",
+  "21138cc06293b8fb28dc8e88c22da80f": "  Error: `Pelea de opción de `{0}' que falta",
+  "3c31663da800c60d0c85349364f4c18f": "  Error: `La pelea' de opción de `{0}' que falta, consiguió `{1} '",
+  "44b652cc5eb0cbb5507e654b5ec6073a": "  Error: Las peleas de variadic deben ser por último `{0} '",
+  "84453ff193ab315f7823042089abea49": "\n  (1) De {0} no ejecutable. Pruebe {{chmod}} o corra con {{root}}\n",
+  "966ae32e74c53417daee689b3e601fad": "Produzca el número de versión",
+  "e3d97262a4cdf396814389a6a99087c8": "  Error: Perdiendo pelea necesaria `{0} '"
+}

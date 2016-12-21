@@ -1,0 +1,11 @@
+{
+  "0d2e331b5c258520aead4eb80033d69b": "  Errore: Opzione sconosciuta `{0} '",
+  "174369644f70256f27b9ce8bc475403a": "Mostrate aiuto perché [cmd ]",
+  "192b943034489b38cf76f19cd9e6c841": "\n  {0} (1) non esiste, non tenta -- non aiuta\n",
+  "21138cc06293b8fb28dc8e88c22da80f": "  Errore: `Argomento di opzione `{0}' mancando",
+  "3c31663da800c60d0c85349364f4c18f": "  Errore: `L'argomento' di opzione `{0}' mancando, ha ottenuto `{1} '",
+  "44b652cc5eb0cbb5507e654b5ec6073a": "  Errore: Gli argomenti variadic devono essere per ultimo `{0} '",
+  "84453ff193ab315f7823042089abea49": "\n  {0} (1) non eseguibile. Tentate {{chmod}} o correte con {{root}}\n",
+  "966ae32e74c53417daee689b3e601fad": "Emettete il numero di versione",
+  "e3d97262a4cdf396814389a6a99087c8": "  Errore: Perdendo argomento richiesto `{0} '"
+}

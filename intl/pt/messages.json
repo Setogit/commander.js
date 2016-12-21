@@ -1,0 +1,11 @@
+{
+  "0d2e331b5c258520aead4eb80033d69b": "  Erro: Opção desconhecida `{0} '",
+  "174369644f70256f27b9ce8bc475403a": "Mostre ajuda para que [cmd ]",
+  "192b943034489b38cf76f19cd9e6c841": "\n  {0} (1) não existe, não tenta -- não ajuda\n",
+  "21138cc06293b8fb28dc8e88c22da80f": "  Erro: `Argumento de opção `{0}' faltando",
+  "3c31663da800c60d0c85349364f4c18f": "  Erro: `O argumento' de opção `{0}' faltando, obteve `{1} '",
+  "44b652cc5eb0cbb5507e654b5ec6073a": "  Erro: Os argumentos variadic devem ser por último `{0} '",
+  "84453ff193ab315f7823042089abea49": "\n  {0} (1) não executável. Tente {{chmod}} ou corra com {{root}}\n",
+  "966ae32e74c53417daee689b3e601fad": "Emita o número de versão",
+  "e3d97262a4cdf396814389a6a99087c8": "  Erro: Perdendo argumento requerido `{0} '"
+}
